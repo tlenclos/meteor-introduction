@@ -1,0 +1,298 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Shower Presentation Engine</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=792, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<link rel="stylesheet" href="shower/themes/ribbon/styles/screen.css">
+    <link rel="stylesheet" href="libs/highlightjs.css">
+    <script src="libs/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <style>
+        .slide pre {
+            margin: 0 0 10px;
+            font-size: 0.8em;
+        }
+        .slide pre code {
+            line-height: 35px;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body class="list">
+	<header class="caption">
+		<h1>Introduction à Meteor</h1>
+		<p>Thibault Lenclos</p>
+	</header>
+	<section class="slide cover" id="Cover"><div>
+		<h2>Introduction à Meteor</h2>
+		<p>Présentation par <a href="http://thibz.com">Thibault Lenclos</a></p>
+		<img src="pictures/stars-bg.jpg" alt="">
+		<!--
+			To apply styles to the certain slides
+			set slide ID to get needed elements
+		-->
+		<style>
+			#Cover h2 {
+				margin:30px 0 0;
+				color:#FFF;
+				text-align:center;
+				font-size:70px;
+			}
+			#Cover p {
+    			margin:10px 0 0;
+    			text-align:center;
+    			color:#FFF;
+    			font-style:italic;
+    			font-size:20px;
+			}
+			#Cover p a {
+                color:#FFF;
+			}
+		</style>
+	</div></section>
+	<section class="slide" id="me"><div>
+		<h2>Qui suis-je?</h2>
+        <img src="pictures/me.png" />
+		<ul>
+			<li>Thibault Lenclos</li>
+			<li>Développeur web et mobile</li>
+			<li>5 IAM à l'ESGI</li>
+			<li>Portfolio <a href="http://thibz.com">thibz.com</a></li>
+			<li><a href="http://github.com/tlenclos">github.com/tlenclos</a></li>
+            <li>Présentation disponible sur <a href="thibz.com/introduction-meteor">thibz.com/introduction-meteor</a></li>
+		</ul>
+
+        <style>
+            #me img {
+                position: relative;
+                right: 100px;
+                float: right;
+                width: 30%;
+                opacity: 0.8;
+            }
+        </style>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Meteor</h2>
+        <ul>
+            <li>"Full stack framework"</li>
+            <li>Basé sur NodeJS</li>
+            <li>Facile à apprendre et rapide à utiliser</li>
+            <li>Pour débutant et expert</li>
+            <li>Temps réel par nature</li>
+        </ul>
+	</div></section>
+    <section class="slide"><div>
+        <h2>Principes</h2>
+        <ol>
+            <li>Echange et synchronisation de données (plus d'envoi de HTML)</li>
+        </ol>
+    </div></section>
+    <section class="slide" id="jstorulethemall"><div>
+        <h2>Principes</h2>
+        <ol>
+            <li>Echange et synchronisation de données (plus d'envoi de HTML)</li>
+            <li>Un langage pour les gouverner tous</li>
+        </ol>
+        <img src="pictures/js-to-rule-them-all.png" />
+        <style>
+            #jstorulethemall img {
+                position: relative;
+                top: -50px;
+                float: right;
+                right: 100px;
+                width: 30%;
+            }
+        </style>
+    </div></section>
+    <section class="slide" id="databaseEverywhere"><div>
+        <h2>Principes</h2>
+        <ol>
+            <li>Echange et synchronisation de données (plus d'envoi de HTML)</li>
+            <li>Un langage pour les gouverner tous</li>
+            <li>Base de données serveur <strong>et</strong> client</li>
+        </ol>
+        <img src="pictures/wat.jpg" />
+        <style>
+            #databaseEverywhere img {
+                position: relative;
+                top: -50px;
+                float: right;
+                right: 100px;
+                width: 30%;
+            }
+        </style>
+    </div></section>
+    <section class="slide" id="latencyCompensation"><div>
+        <h2>Principes</h2>
+        <ol>
+            <li>Echange et synchronisation de données (plus d'envoi de HTML)</li>
+            <li>Un langage pour les gouverner tous</li>
+            <li>Base de données serveur <strong>et</strong> client</li>
+            <li>Compensation de latence</li>
+        </ol>
+        <img src="pictures/escargot_speed.png" />
+        <style>
+            #latencyCompensation img {
+                position: relative;
+                left: 200px;
+                top: -50px;
+                width: 50%;
+            }
+        </style>
+    </div></section>
+    <section class="slide" id="meteorTechs"><div>
+        <h2>Principes</h2>
+        <ol>
+            <li>Echange et synchronisation de données (plus d'envoi de HTML)</li>
+            <li>Un langage pour les gouverner tous</li>
+            <li>Base de données serveur <strong>et</strong> client</li>
+            <li>Compensation de latence</li>
+            <li>Open source et basé sur des technologies reconnues</li>
+        </ol>
+        <img src="pictures/techs.png" />
+        <style>
+            #meteorTechs img {
+                position: relative;
+                top: -20px;
+            }
+        </style>
+    </div></section>
+    <section class="slide"><div>
+        <h2>Principes</h2>
+        <ol>
+            <li>Echange et synchronisation de données (plus d'envoi de HTML)</li>
+            <li>Un langage pour les gouverner tous</li>
+            <li>Base de données serveur <strong>et</strong> client</li>
+            <li>Compensation de latence</li>
+            <li>Open source et basé sur des technologies reconnues</li>
+            <li>Simplicité d’utilisation, augmentation de la productivité</li>
+        </ol>
+    </div></section>
+	<section class="slide cover" id="meteorArchitecture"><div>
+		<h2>Architecture</h2>
+        <p><img src="pictures/meteor-architecture.png" id="architectureImg"/></p>
+        <img src="pictures/stars-bg.jpg" alt="">
+        <style>
+            #meteorArchitecture h2 {
+                color: white;
+            }
+
+            #meteorArchitecture #architectureImg {
+                position: relative;
+                top: -35px;
+                left: 120px;
+                margin: auto;
+                z-index: 10;
+            }
+        </style>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Démarrage</h2>
+        <ul>
+            <li>Installer meteor
+            <pre><code>     curl https://install.meteor.com | /bin/sh</code></pre>
+            </li>
+            <li>Créer une application
+            <pre><code>     meteor create testApp</code></pre>
+            </li>
+            <li>Lancer
+            <pre><code>     cd testApp</code></pre>
+            <pre><code>     meteor</code></pre>
+            </li>
+        </ul>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Templates</h2>
+		<pre><code>&lt;h1&gt;Today's weather!&lt;/h1&gt;
+<mark>{{&gt; forecast}}</mark>
+&lt;template name=&quot;forecast&quot;&gt;
+&lt;div&gt;It'll be <mark>{{prediction}}</mark> tonight&lt;/div&gt;
+&lt;/template&gt;
+</code></pre>
+<pre><code>
+// in client/myapp.js: reactive helper function
+Template.forecast.prediction = function () {
+  return Session.get("weather");
+};
+    </code></pre>
+	</div></section>
+    <section class="slide"><div>
+        <h2>Collections</h2>
+        <pre><code>// Create a new collection
+Messages = new Meteor.Collection("messages");
+// return array of my messages
+var myMessages = Messages.find({userId: Session.get('myUserId')}).fetch();
+
+// mark my first message as "important"
+Messages.update(myMessages[0]._id, {$set: {important: true}});
+
+// create a new message
+Messages.insert({text: "Hello, world!"});
+        </code></pre>
+    </div></section>
+    <section class="slide"><div>
+        <h2>Et beaucoup plus</h2>
+        <ul>
+            <li>Methods</li>
+            <li>Accounts</li>
+            <li>Session</li>
+            <li>Email</li>
+        </ul>
+    </div></section>
+	<section class="slide shout"><div>
+		<h2>Demo time</h2>
+	</div></section>
+	<section class="slide shout" id="demo1">
+        <iframe src="https://pixel-board.meteor.com"></iframe>
+        <style>
+            #demo1 iframe {
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+	</section>
+    <section class="slide"><div>
+        <h2>Comment ca marche?</h2>
+        <ul>
+            <li>Chaque pixel est stocké dans une collection</li>
+            <li>Synchronisation et rafraichissement du canvas</li>
+        </ul>
+    </div></section>
+    <section class="slide"><div>
+        <h2>Contexte réactif</h2>
+        <pre><code><mark>Deps.autorun(function () {</mark>
+    var pixels = PixelBoardsCollection.find({});
+    _.each(pixels.fetch(), function(item) {
+        if(!self.grid[item.y])
+            self.grid[item.y] = [];
+
+        self.grid[item.y][item.x] = item.color;
+    });
+
+    self.draw();
+});
+        </code></pre>
+    </div></section>
+    <section class="slide"><div>
+        <h2>Ok et c'était facile alors?</h2>
+        <ul>
+            <li>La complexité de la démo réside dans le dessin canvas... </li>
+        </ul>
+        <p class="note"><strong>Merci Meteor !</strong></p>
+    </div></section>
+    <section class="slide shout"><div>
+        <h2>Questions?</h2>
+    </div></section>
+	<!--
+		To hide progress bar from entire presentation
+		just remove “progress” element.
+	-->
+	<div class="progress"><div></div></div>
+	<script src="shower/shower.min.js"></script>
+	<!-- Copyright © 2014 Yours Truly, Famous Inc. -->
+	<!-- Photos by John Carey, fiftyfootshadows.net -->
+</body>
+</html>
