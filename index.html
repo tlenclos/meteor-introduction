@@ -1,11 +1,11 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-	<title>Shower Presentation Engine</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=792, user-scalable=no">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<link rel="stylesheet" href="shower/themes/ribbon/styles/screen.css">
+    <title>Shower Presentation Engine</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=792, user-scalable=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="shower/themes/ribbon/styles/screen.css">
     <link rel="stylesheet" href="libs/highlightjs.css">
     <script src="libs/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
@@ -21,48 +21,48 @@
     </style>
 </head>
 <body class="list">
-	<header class="caption">
-		<h1>Introduction à Meteor</h1>
-		<p>Thibault Lenclos</p>
-	</header>
-	<section class="slide cover" id="Cover"><div>
-		<h2>Introduction à Meteor</h2>
-		<p>Présentation par <a href="http://thibz.com">Thibault Lenclos</a></p>
-		<img src="pictures/stars-bg.jpg" alt="">
-		<!--
-			To apply styles to the certain slides
-			set slide ID to get needed elements
-		-->
-		<style>
-			#Cover h2 {
-				margin:30px 0 0;
-				color:#FFF;
-				text-align:center;
-				font-size:70px;
-			}
-			#Cover p {
-    			margin:10px 0 0;
-    			text-align:center;
-    			color:#FFF;
-    			font-style:italic;
-    			font-size:20px;
-			}
-			#Cover p a {
+    <header class="caption">
+        <h1>Introduction à Meteor</h1>
+        <p>Thibault Lenclos</p>
+    </header>
+    <section class="slide cover" id="Cover"><div>
+        <h2>Introduction à Meteor</h2>
+        <p>Présentation par <a href="http://thibz.com">Thibault Lenclos</a></p>
+        <img src="pictures/stars-bg.jpg" alt="">
+        <!--
+            To apply styles to the certain slides
+            set slide ID to get needed elements
+        -->
+        <style>
+            #Cover h2 {
+                margin:30px 0 0;
                 color:#FFF;
-			}
-		</style>
-	</div></section>
-	<section class="slide" id="me"><div>
-		<h2>Qui suis-je?</h2>
+                text-align:center;
+                font-size:70px;
+            }
+            #Cover p {
+                margin:10px 0 0;
+                text-align:center;
+                color:#FFF;
+                font-style:italic;
+                font-size:20px;
+            }
+            #Cover p a {
+                color:#FFF;
+            }
+        </style>
+    </div></section>
+    <section class="slide" id="me"><div>
+        <h2>Qui suis-je?</h2>
         <img src="pictures/me.png" />
-		<ul>
-			<li>Thibault Lenclos</li>
-			<li>Développeur web et mobile</li>
-			<li>5 IAM à l'ESGI</li>
-			<li>Portfolio <a href="http://thibz.com">thibz.com</a></li>
-			<li><a href="http://github.com/tlenclos">github.com/tlenclos</a></li>
+        <ul>
+            <li>Thibault Lenclos</li>
+            <li>Développeur web et mobile</li>
+            <li>5 IAM à l'ESGI</li>
+            <li>Portfolio <a href="http://thibz.com">thibz.com</a></li>
+            <li><a href="http://github.com/tlenclos">github.com/tlenclos</a></li>
             <li>Présentation disponible sur <a href="thibz.com/introduction-meteor">thibz.com/introduction-meteor</a></li>
-		</ul>
+        </ul>
 
         <style>
             #me img {
@@ -73,9 +73,9 @@
                 opacity: 0.8;
             }
         </style>
-	</div></section>
-	<section class="slide"><div>
-		<h2>Meteor</h2>
+    </div></section>
+    <section class="slide"><div>
+        <h2>Meteor</h2>
         <ul>
             <li>"Full stack framework"</li>
             <li>Basé sur NodeJS</li>
@@ -83,7 +83,7 @@
             <li>Pour débutant et expert</li>
             <li>Temps réel par nature</li>
         </ul>
-	</div></section>
+    </div></section>
     <section class="slide"><div>
         <h2>Principes</h2>
         <ol>
@@ -171,8 +171,8 @@
             <li>Simplicité d’utilisation, augmentation de la productivité</li>
         </ol>
     </div></section>
-	<section class="slide cover" id="meteorArchitecture"><div>
-		<h2>Architecture</h2>
+    <section class="slide cover" id="meteorArchitecture"><div>
+        <h2>Architecture</h2>
         <p><img src="pictures/meteor-architecture.png" id="architectureImg"/></p>
         <img src="pictures/stars-bg.jpg" alt="">
         <style>
@@ -188,9 +188,9 @@
                 z-index: 10;
             }
         </style>
-	</div></section>
-	<section class="slide"><div>
-		<h2>Démarrage</h2>
+    </div></section>
+    <section class="slide"><div>
+        <h2>Démarrage</h2>
         <ul>
             <li>Installer meteor
             <pre><code>     curl https://install.meteor.com | /bin/sh</code></pre>
@@ -203,22 +203,7 @@
             <pre><code>     meteor</code></pre>
             </li>
         </ul>
-	</div></section>
-	<section class="slide"><div>
-		<h2>Templates</h2>
-		<pre><code>&lt;h1&gt;Today's weather!&lt;/h1&gt;
-<mark>{{&gt; forecast}}</mark>
-&lt;template name=&quot;forecast&quot;&gt;
-&lt;div&gt;It'll be <mark>{{prediction}}</mark> tonight&lt;/div&gt;
-&lt;/template&gt;
-</code></pre>
-<pre><code>
-// in client/myapp.js: reactive helper function
-Template.forecast.prediction = function () {
-  return Session.get("weather");
-};
-    </code></pre>
-	</div></section>
+    </div></section>
     <section class="slide"><div>
         <h2>Collections</h2>
         <pre><code>// Create a new collection
@@ -234,6 +219,21 @@ Messages.insert({text: "Hello, world!"});
         </code></pre>
     </div></section>
     <section class="slide"><div>
+        <h2>Templates</h2>
+        <pre><code>&lt;h1&gt;Today's weather!&lt;/h1&gt;
+<mark>{{&gt; forecast}}</mark>
+&lt;template name=&quot;forecast&quot;&gt;
+&lt;div&gt;It'll be <mark>{{prediction}}</mark> tonight&lt;/div&gt;
+&lt;/template&gt;
+</code></pre>
+<pre><code>
+// in client/myapp.js: reactive helper function
+Template.forecast.prediction = function () {
+  return Session.get("weather");
+};
+    </code></pre>
+    </div></section>
+    <section class="slide"><div>
         <h2>Et beaucoup plus</h2>
         <ul>
             <li>Methods</li>
@@ -242,18 +242,23 @@ Messages.insert({text: "Hello, world!"});
             <li>Email</li>
         </ul>
     </div></section>
-	<section class="slide shout" id="demoTime"><div>
+    <section class="slide shout" id="demoTime"><div>
         <style>
             #demoTime h2 {
                 font-size: 100px;
+                top: 30%;
+            }
+            #demoTime p {
+                position: absolute;
+                bottom: 0;
+                left: 30%;
+                margin: 0;
             }
         </style>
-		<h2>Demo time
-		<br />
-		<a href="https://pixel-board.meteor.com/">pixel-board.meteor.com</a>
-		</h2>
-	</div></section>
-	<section class="slide shout" id="demo1">
+        <h2>Demo time <br /><a href="http://pixel-board.meteor.com">pixel-board.meteor.com</a></h2>
+        <p><img src="pictures/qrcode.png" alt="Qr code" /></p>
+    </div></section>
+    <section class="slide shout" id="demo1">
         <iframe src="https://pixel-board.meteor.com"></iframe>
         <style>
             #demo1 iframe {
@@ -261,7 +266,7 @@ Messages.insert({text: "Hello, world!"});
                 height: 100%;
             }
         </style>
-	</section>
+    </section>
     <section class="slide"><div>
         <h2>Comment ca marche?</h2>
         <ul>
@@ -291,16 +296,25 @@ Messages.insert({text: "Hello, world!"});
         </ul>
         <p class="note"><strong>Merci Meteor !</strong></p>
     </div></section>
+    <section class="slide"><div>
+        <h2>Pour voir plus loin</h2>
+        <ul>
+            <li><a href="http://telesc.pe/">Telescope</a>, application de type forum inspiré de Reddit</li>
+            <li><a href="https://www.meteor.com/examples">Démos officielles</a> (Todo, Wordplay...)</li>
+            <li><a href="http://docs.meteor.com/">Documentation</a></li>
+            <li>E-book: <a href="https://www.discovermeteor.com/">Build Real-Time Javascript Web Apps</a><br />par Tom Coleman et Sacha Greif</li>
+        </ul>
+    </div></section>
     <section class="slide shout"><div>
         <h2>Questions?</h2>
     </div></section>
-	<!--
-		To hide progress bar from entire presentation
-		just remove “progress” element.
-	-->
-	<div class="progress"><div></div></div>
-	<script src="shower/shower.min.js"></script>
-	<!-- Copyright © 2014 Yours Truly, Famous Inc. -->
-	<!-- Photos by John Carey, fiftyfootshadows.net -->
+    <!--
+        To hide progress bar from entire presentation
+        just remove “progress” element.
+    -->
+    <div class="progress"><div></div></div>
+    <script src="shower/shower.min.js"></script>
+    <!-- Copyright © 2014 Yours Truly, Famous Inc. -->
+    <!-- Photos by John Carey, fiftyfootshadows.net -->
 </body>
 </html>
